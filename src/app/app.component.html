@@ -1,0 +1,34 @@
+<ion-app>
+  <ion-content>
+    <h1 style="text-align: center;">Calcular Frete</h1>
+    <ion-item>
+      <ion-label position="floating">Cidade de Origem</ion-label>
+      <ion-input [(ngModel)]="corg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cidade de Destino</ion-label>
+      <ion-input [(ngModel)]="cdst"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Estado de Origem</ion-label>
+      <ion-input [(ngModel)]="eorg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Estado de Destino</ion-label>
+      <ion-input [(ngModel)]="edst"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Km</ion-label>
+      <ion-input [(ngModel)]="km" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Peso aproximado (Kg)</ion-label>
+      <ion-input [(ngModel)]="kg" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Valor da Compra</ion-label>
+      <ion-input [(ngModel)]="valor" type="number"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="calcular()">Calcular Frete</ion-button>
+  </ion-content>
+</ion-app>
